@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C843F10026F214A1004F765C /* Newton form.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C843F0FE26F214A1004F765C /* Newton form.cpp */; };
+		C843F10326F214AE004F765C /* Lagrange form.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C843F10126F214AE004F765C /* Lagrange form.cpp */; };
 		C8A54EF026F1580300EF89AC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8A54EEF26F1580300EF89AC /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C843F0FE26F214A1004F765C /* Newton form.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Newton form.cpp"; sourceTree = "<group>"; };
+		C843F0FF26F214A1004F765C /* Newton form.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Newton form.hpp"; sourceTree = "<group>"; };
+		C843F10126F214AE004F765C /* Lagrange form.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Lagrange form.cpp"; sourceTree = "<group>"; };
+		C843F10226F214AE004F765C /* Lagrange form.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Lagrange form.hpp"; sourceTree = "<group>"; };
+		C843F10426F21548004F765C /* Data type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Data type.h"; sourceTree = "<group>"; };
 		C8A54EEC26F1580200EF89AC /* Interpolation polynomials */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Interpolation polynomials"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A54EEF26F1580300EF89AC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				C8A54EEF26F1580300EF89AC /* main.cpp */,
+				C843F0FE26F214A1004F765C /* Newton form.cpp */,
+				C843F0FF26F214A1004F765C /* Newton form.hpp */,
+				C843F10126F214AE004F765C /* Lagrange form.cpp */,
+				C843F10226F214AE004F765C /* Lagrange form.hpp */,
+				C843F10426F21548004F765C /* Data type.h */,
 			);
 			path = "Interpolation polynomials";
 			sourceTree = "<group>";
@@ -119,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A54EF026F1580300EF89AC /* main.cpp in Sources */,
+				C843F10026F214A1004F765C /* Newton form.cpp in Sources */,
+				C843F10326F214AE004F765C /* Lagrange form.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
