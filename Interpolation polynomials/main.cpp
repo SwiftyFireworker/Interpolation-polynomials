@@ -28,16 +28,15 @@ int main() {
         assert(std::find(x.begin(), x.begin() + i, x[i]) == x.begin() + i);
         
     }
-    std::cout << std::endl;
     
     T point = 0;
-    
-    std::cout << "Enter point:" << std::endl;
-    std::cin >> point;
-    std::cout << std::endl;
-    std::cout << "Newton's result: " << useNewtonPolynomial(x, y, point) << std::endl;
-    std::cout << "Lagrange result: " << useLagrangePolynomial(x, y, point) << std::endl;
-    
+    while (true) {
+        std::cout << std::endl;
+        std::cout << "Enter point: ";
+        std::cin >> point;
+        std::cout << "Newton's result: " << useNewtonPolynomial(x, y, point) << std::endl;
+        std::cout << "Lagrange result: " << useLagrangePolynomial(x, y, point) << std::endl;
+    }
     
     return 0;
 }
