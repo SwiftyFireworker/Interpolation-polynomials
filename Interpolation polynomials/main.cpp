@@ -31,13 +31,13 @@ int main() {
     std::cout << std::endl;
     
     T point = 0;
-    while (true) {
-        std::cout << "Enter point:" << std::endl;
-        std::cin >> point;
-        std::cout << std::endl;
-        std::cout << "Newton's result: " << useNewtonPolynomial(x, y, point) << std::endl;
-        std::cout << "Lagrange result: " << useLagrangePolynomial(x, y, point) << std::endl;
-    }
+    
+    std::cout << "Enter point:" << std::endl;
+    std::cin >> point;
+    std::cout << std::endl;
+    std::cout << "Newton's result: " << useNewtonPolynomial(x, y, point) << std::endl;
+    std::cout << "Lagrange result: " << useLagrangePolynomial(x, y, point) << std::endl;
+    
     
     return 0;
 }
