@@ -13,21 +13,25 @@
 #include "Lagrange form.hpp"
 #include "Data type.h"
 
-using T = double;
 
-int main() {
-    int n = 0;
-    std::cout << "Enter number of points:" << std::endl;
+void readData(int & n, std::vector<T> & x, std::vector<T> & y) {
+    std::cout << "Enter number of points:\n";
     std::cin >> n;
-    std::cout << std::endl;
+    x.resize(n);
+    y.resize(n);
     
-    std::vector<T> x(n), y(n);
-    std::cout << "Enter points x_i, f(x_i):" << std::endl;
+    std::cout << "\nEnter points x_i, f(x_i):\n";
     for (int i = 0; i < n; i++) {
         std::cin >> x[i] >> y[i];
         assert(std::find(x.begin(), x.begin() + i, x[i]) == x.begin() + i);
-        
     }
+}
+
+
+int main() {
+    int n = 0;
+    std::vector<T> x, y;
+    readData(n, x, y);
     
     T point = 0;
     while (true) {
